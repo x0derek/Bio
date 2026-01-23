@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    background: linear-gradient(45deg, #190131, #3b0274);
+    color: #190131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in;
+}
+
+.container {
+    background: linear-gradient(-135deg, #f7f0ff, #bc8bf5);
+    width: clamp(300px, 90%, 400px);
+    height: clamp(500px, 80%, 600px);
+    border-radius: 25px;
+    box-shadow: 12px 17px 10px #7e5da1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    transition: transform 0.3s ease;
+}
+
+img {
+    margin-top: 2%;
+    border: 3px solid #37036b;
+    width: clamp(80px, 25%, 120px);
+    border-radius: 50%;
+    box-shadow: 3px 5px 10px #2f025d;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img:hover {
+    transform: translateY(-4px);
+    box-shadow: 5px 8px 10px #2f025d;
+}
+
+.dane {
+    margin: 5%;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: bolder;
+}
+
+.info {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    color: #190131be;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.longButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7f0ff;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: bold;
+    margin-top: 5%;
+    background-color: #4a1380;
+    border: 2px solid #170429;
+    border-radius: 13px;
+    width: 82%;
+    height: 7.5%;
+    gap: 4%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.longButton:hover {
+    transform: translate(-3px,-8px);
+    border: 2px solid #37036b;
+    box-shadow: 4px 7px 8px #2f025d;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: translate(-3px,-8px);
+    border: 2px solid #37036b;
+    box-shadow: 4px 7px 8px #2f025d;
+}
+
+.longButton:active {
+    background-color: #5d2396;
+    border: 2px solid #490042;
+}
+
+.bottomButton {
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    gap: 17%;
+}
+
+.miniButton {
+    color: #190131;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.miniButton:hover {
+    transform: scale(1.2) rotate(-15deg);
+    color: #4a1380;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
